@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;900&family=Red+Hat+Display:wght@700&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $main-font;
+}
+
+.header-font {
+  font-family: $header-font;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    @extend .header-font;
+  }
+}
