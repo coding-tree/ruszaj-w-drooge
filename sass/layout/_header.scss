@@ -9,7 +9,7 @@
     height: 50px;
   }
   &__info {
-    flex: 0 1 60%;
+    flex: 0 1 65%;
     display: flex;
     justify-content: space-between;
   }
@@ -28,6 +28,24 @@
     height: 100%;
   }
 
+  &__logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 150px;
+    margin-right: 2.5rem;
+  }
+
+  &__logo-text {
+    h2,
+    h3 {
+      font-weight: 900;
+    }
+  }
+
   &__map {
     position: absolute;
     top: 0;
@@ -39,6 +57,15 @@
     background-size: cover;
     background-position: 0 -20px;
     z-index: -1;
+  }
+
+  &__clients {
+    text-align: right;
+    h3,
+    h4 {
+      font-family: $main-font;
+      font-weight: 900;
+    }
   }
 
   &__menu {
