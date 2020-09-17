@@ -1,0 +1,19 @@
+.header {
+  &__banner {
+    background-color: $secondary-color;
+  }
+  &__banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+  }
+  &__info {
+    flex: 0 1 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__submenu {
+    flex: 0 1 30%;
+  }
+}

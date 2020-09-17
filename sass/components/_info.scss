@@ -1,0 +1,22 @@
+.info {
+  display: flex;
+  align-items: center;
+  font-family: $header-font;
+  font-size: 1.4rem;
+  &__icon {
+    color: $primary-color;
+    margin-right: 0.5rem;
+    font-size: 2rem;
+  }
+  &__link {
+    text-decoration: none;
+    color: $font-color;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+  &__text {
+  }
+}

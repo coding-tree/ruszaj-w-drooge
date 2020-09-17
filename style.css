@@ -16,6 +16,59 @@ body {
   font-family: "Red Hat Display", sans-serif; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #2d2d2d;
+  text-rendering: optimizeLegibility; }
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto; }
+
+.header__banner {
+  background-color: #f3f3f3; }
+.header__banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px; }
+.header__info {
+  flex: 0 1 60%;
+  display: flex;
+  justify-content: space-between; }
+.header__submenu {
+  flex: 0 1 30%; }
+
+.info {
+  display: flex;
+  align-items: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.4rem; }
+  .info__icon {
+    color: #e16241;
+    margin-right: 0.5rem;
+    font-size: 2rem; }
+  .info__link {
+    text-decoration: none;
+    color: #2d2d2d;
+    transition: 0.2s ease-in-out; }
+    .info__link:hover {
+      color: #e16241; }
+
+.submenu {
+  font-family: "Red Hat Display", sans-serif; }
+  .submenu__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none; }
+  .submenu__link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 1rem;
+    color: #2d2d2d;
+    transition: 0.2s ease-in-out; }
+    .submenu__link:hover {
+      color: #e16241; }
+    .submenu__link--active {
+      color: #e16241; }
 
 /*# sourceMappingURL=style.css.map */
