@@ -1,0 +1,22 @@
+.btn {
+  padding: 1.5rem 3rem;
+  font-size: 2rem;
+  border: 3px solid;
+  font-weight: 900;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+
+  &__primary {
+    border-color: $primary-color;
+    color: $white-color;
+    background-color: $primary-color;
+    &:hover {
+      color: $primary-color;
+      background-color: $white-color;
+    }
+  }
+
+  &--small {
+    padding: 1rem 2.2rem;
+  }
+}

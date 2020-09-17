@@ -1,0 +1,71 @@
+.carousel {
+  position: relative;
+  display: flex;
+  margin-top: 3rem;
+  height: 60rem;
+  &__item {
+    position: relative;
+    width: 100%;
+  }
+  &__photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -3;
+  }
+
+  &__shadow,
+  &__filter {
+    position: absolute;
+
+    height: 100%;
+  }
+  &__shadow {
+    background-color: rgba($black-color, 0.8);
+    mix-blend-mode: overlay;
+    width: 100%;
+    z-index: -2;
+  }
+  &__filter {
+    width: 50%;
+    background-image: linear-gradient(
+      to right,
+      $white-color,
+      rgba($white-color, 0)
+    );
+    z-index: -1;
+    mix-blend-mode: hue;
+  }
+  &__container {
+    height: 100%;
+  }
+  &__caption {
+    height: 70%;
+    display: grid;
+    align-content: center;
+    grid-auto-rows: min-content;
+    row-gap: 3rem;
+    width: 50%;
+  }
+  &__title {
+    font-weight: 900;
+    font-size: 4.7rem;
+  }
+  &__description {
+    font-weight: 500;
+    font-family: inherit;
+  }
+  &__btn {
+    justify-self: flex-start;
+  }
+
+  &__indicators {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

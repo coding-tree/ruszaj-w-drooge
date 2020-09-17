@@ -1,0 +1,74 @@
+.rent {
+  margin: 8rem 0;
+
+  &__info {
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+
+  &__title {
+    margin-bottom: 6rem;
+  }
+
+  &__steps {
+    position: relative;
+  }
+  &__map {
+    width: 100%;
+    height: 588px;
+  }
+
+  &__step,
+  &__btn {
+    position: absolute;
+  }
+
+  &__btn {
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__step {
+    font-size: 2rem;
+    font-family: $header-font;
+    &--1 {
+      top: 63%;
+      left: 11%;
+    }
+    &--2 {
+      top: 23%;
+      left: 29%;
+    }
+    &--3 {
+      top: 63%;
+      right: 35.5%;
+    }
+    &--4 {
+      top: 23%;
+      right: 13%;
+    }
+  }
+
+  &__advantages {
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    grid-template-rows: minmax(0, 1fr);
+    column-gap: 3rem;
+  }
+
+  &__content {
+    display: grid;
+    grid-auto-rows: min-content;
+    row-gap: 5rem;
+  }
+
+  &__image-container {
+    display: flex;
+  }
+  &__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

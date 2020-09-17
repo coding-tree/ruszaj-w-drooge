@@ -22,6 +22,7 @@ body {
 @for $i from 1 through 6 {
   h#{$i} {
     @extend .header-font;
+    line-height: 1.7;
   }
   .heading-#{$i} {
     @if ($i == 1) {
@@ -44,5 +45,14 @@ body {
     &--dark {
       @extend .dark;
     }
+  }
+}
+
+p {
+  color: $footer-color;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  &:not(:last-child) {
+    margin-bottom: 1.2rem;
   }
 }
