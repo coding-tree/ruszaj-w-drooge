@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAQ,4HAAoH;ACA5H;;SAEU;EACR,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,OAAO;;ADHrB,IAAK;EACH,SAAS,EAAE,KAAK;;AAGlB,IAAK;EACH,WAAW,EEPD,oBAAoB;;AFUhC,oCAAa;EACX,WAAW,EEVC,6BAA6B;;ACD3C,IAAK;EACH,UAAU,EAAE,UAAU",
-"sources": ["../sass/base/_typography.scss","../sass/base/_reset.scss","../sass/utilities/_variables.scss","../sass/base/_base.scss"],
-"names": [],
-"file": "main.css"
-}
