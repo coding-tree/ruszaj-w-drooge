@@ -5,6 +5,6 @@ body {
 }
 
 .container {
-  max-width: 114rem;
+  max-width: $grid-width;
   margin: 0 auto;
 }

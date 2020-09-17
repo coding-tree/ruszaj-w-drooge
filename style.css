@@ -15,6 +15,24 @@ body {
 .header-font, h1, h2, h3, h4, h5, h6 {
   font-family: "Red Hat Display", sans-serif; }
 
+.light, .heading-1--light, .heading-2--light, .heading-3--light, .heading-4--light, .heading-5--light, .heading-6--light {
+  color: #e16241; }
+
+.dark, .heading-1--dark, .heading-2--dark, .heading-3--dark, .heading-4--dark, .heading-5--dark, .heading-6--dark {
+  color: #2d2d2d; }
+
+.heading-1 {
+  font-size: 4rem; }
+
+.heading-2 {
+  font-size: 3.2rem; }
+
+.heading-3 {
+  font-size: 2.4rem; }
+
+.heading-4 {
+  font-size: 2rem; }
+
 body {
   box-sizing: border-box;
   color: #2d2d2d;
@@ -37,6 +55,28 @@ body {
   justify-content: space-between; }
 .header__submenu {
   flex: 0 1 25%; }
+.header__body {
+  position: relative;
+  height: 23rem; }
+.header__body-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%; }
+.header__map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 70%;
+  background-image: url("../../public/mapka.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -20px;
+  z-index: -1; }
+.header__menu {
+  background-color: #f3f3f3; }
 
 .info {
   display: flex;
@@ -70,5 +110,28 @@ body {
       color: #e16241; }
     .submenu__link--active {
       color: #e16241; }
+
+.menu {
+  display: flex;
+  height: 4.6rem; }
+  .menu__list {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    height: 100%; }
+  .menu__link {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    height: 100%;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+    color: #2d2d2d; }
+    .menu__link:hover, .menu__link--active {
+      color: #fff;
+      background-color: #e16241; }
 
 /*# sourceMappingURL=style.css.map */

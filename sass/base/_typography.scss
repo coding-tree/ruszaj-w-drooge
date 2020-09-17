@@ -12,8 +12,32 @@ body {
   font-family: $header-font;
 }
 
+.light {
+  color: $primary-color;
+}
+.dark {
+  color: $font-color;
+}
+
 @for $i from 1 through 6 {
   h#{$i} {
     @extend .header-font;
+  }
+  .heading-#{$i} {
+    @if ($i == 1) {
+      font-size: 4rem;
+    } @else if($i == 2) {
+      font-size: 3.2rem;
+    } @else if($i == 3) {
+      font-size: 2.4rem;
+    } @else if($i == 4) {
+      font-size: 2rem;
+    }
+    &--light {
+      @extend .light;
+    }
+    &--dark {
+      @extend .dark;
+    }
   }
 }

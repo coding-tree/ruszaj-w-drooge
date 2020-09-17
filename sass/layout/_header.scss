@@ -16,4 +16,32 @@
   &__submenu {
     flex: 0 1 25%;
   }
+  &__body {
+    position: relative;
+    height: 23rem;
+  }
+  &__body-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__map {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 70%;
+    background-image: url("../../public/mapka.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -20px;
+    z-index: -1;
+  }
+
+  &__menu {
+    background-color: $secondary-color;
+  }
 }
