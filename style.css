@@ -181,7 +181,9 @@ body {
   border: 3px solid;
   font-weight: 900;
   text-decoration: none;
-  transition: 0.2s ease-in-out; }
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif; }
   .btn__primary {
     border-color: #e16241;
     color: #fff;
@@ -247,6 +249,31 @@ body {
     transform: translateX(-50%); }
   .carousel .slick-track {
     height: 100%; }
+
+.cookies {
+  background-color: #9f9f9f;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .cookies__text {
+    color: #fff;
+    margin-bottom: 0 !important;
+    font-size: 1.4rem;
+    margin-left: 3rem; }
+  .cookies__link {
+    color: #fff;
+    transition: 0.2s ease-in-out; }
+    .cookies__link:hover {
+      color: #f3f3f3; }
+  .cookies__btn {
+    font-size: 1.4rem;
+    padding: 0 2rem;
+    height: 100%; }
+    .cookies__btn:hover {
+      border-color: #fff; }
+    .cookies__btn:focus {
+      outline: none; }
 
 .indicators {
   display: grid;

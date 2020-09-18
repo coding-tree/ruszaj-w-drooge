@@ -5,6 +5,8 @@
   font-weight: 900;
   text-decoration: none;
   transition: 0.2s ease-in-out;
+  cursor: pointer;
+  font-family: $main-font;
 
   &__primary {
     border-color: $primary-color;

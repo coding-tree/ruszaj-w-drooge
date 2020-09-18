@@ -1,0 +1,33 @@
+.cookies {
+  background-color: $footer-color;
+  height: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__text {
+    color: $white-color;
+    margin-bottom: 0 !important;
+    font-size: 1.4rem;
+    margin-left: 3rem;
+  }
+  &__link {
+    color: $white-color;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+  &__btn {
+    font-size: 1.4rem;
+    padding: 0 2rem;
+    height: 100%;
+    &:hover {
+      border-color: $white-color;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
