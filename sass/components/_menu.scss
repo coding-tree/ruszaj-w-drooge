@@ -19,7 +19,7 @@
     font-family: $header-font;
     font-size: 1.6rem;
     text-decoration: none;
-    transition: 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     color: $font-color;
 
     &:hover,

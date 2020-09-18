@@ -181,6 +181,34 @@ body {
     .footer__link:hover {
       color: #e16241; }
 
+#advices .advices {
+  margin: 8rem 0; }
+  #advices .advices__pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8rem; }
+  #advices .advices__heading {
+    font-weight: 900; }
+#advices .cards {
+  margin-top: 6rem; }
+  #advices .cards__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
+    gap: 2.5rem; }
+#advices .card {
+  text-align: left; }
+  #advices .card__container {
+    padding: 0; }
+  #advices .card__image {
+    max-height: 28rem; }
+  #advices .card__btn {
+    text-align: center;
+    margin-top: 3rem; }
+  #advices .card__title, #advices .card__description {
+    padding: 0 3rem; }
+  #advices .card__title {
+    font-size: 2.4rem; }
+
 #category .cards {
   position: relative;
   min-height: 1000px;
@@ -270,6 +298,10 @@ body {
     margin-bottom: 2rem; }
   .card__title, .card__price {
     font-weight: 900; }
+  .card__description {
+    margin-bottom: 3rem; }
+  .card__btn {
+    margin-top: auto !important; }
 
 .carousel {
   position: relative;
@@ -410,7 +442,7 @@ body {
   .info__link {
     text-decoration: none;
     color: #2d2d2d;
-    transition: 0.2s ease-in-out; }
+    transition: color 0.2s ease-in-out; }
     .info__link:hover {
       color: #e16241; }
 
@@ -431,7 +463,7 @@ body {
     font-family: "Red Hat Display", sans-serif;
     font-size: 1.6rem;
     text-decoration: none;
-    transition: 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     color: #2d2d2d; }
     .menu__link:hover, .menu__link--active {
       color: #fff;
@@ -549,7 +581,7 @@ body {
     font-size: 1.4rem;
     padding: 1rem;
     color: #2d2d2d;
-    transition: 0.2s ease-in-out; }
+    transition: color 0.2s ease-in-out; }
     .submenu__link:hover, .submenu__link--active {
       color: #e16241; }
 

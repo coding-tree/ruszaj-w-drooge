@@ -1,0 +1,43 @@
+#advices {
+  .advices {
+    margin: 8rem 0;
+
+    &__pagination {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 8rem;
+    }
+    &__heading {
+      font-weight: 900;
+    }
+  }
+  .cards {
+    margin-top: 6rem;
+    &__container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
+      gap: 2.5rem;
+    }
+  }
+  .card {
+    text-align: left;
+
+    &__container {
+      padding: 0;
+    }
+    &__image {
+      max-height: 28rem;
+    }
+    &__btn {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    &__title,
+    &__description {
+      padding: 0 3rem;
+    }
+    &__title {
+      font-size: 2.4rem;
+    }
+  }
+}
