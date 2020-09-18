@@ -1,0 +1,68 @@
+.footer {
+  background-color: $secondary-color;
+  padding: 9.5rem 0;
+
+  &__container {
+    display: grid;
+    grid-template-areas:
+      "company contact privacy"
+      "copyright copyright copyright";
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  &__company {
+    display: grid;
+    grid-area: company;
+  }
+  &__company-name {
+    padding-bottom: 3rem;
+  }
+  &__contact {
+    display: grid;
+    grid-area: contact;
+    grid-template-rows: min-content 1fr;
+    p {
+      line-height: 1;
+    }
+  }
+  &__contact &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__privacy {
+    grid-area: privacy;
+    display: flex;
+    flex-direction: column;
+  }
+  &__copyright {
+    grid-area: copyright;
+    text-align: center;
+    padding-top: 3rem;
+    border-top: 3px solid $primary-color;
+  }
+  &__title {
+    border-bottom: 3px solid $primary-color;
+    padding-bottom: 1rem;
+  }
+  &__content {
+    padding-top: 3rem;
+  }
+  &__description {
+    font-size: 1.4rem;
+  }
+  &__copyright-text {
+    font-size: 1.2rem;
+  }
+  &__link {
+    margin-top: auto;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: $footer-color;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

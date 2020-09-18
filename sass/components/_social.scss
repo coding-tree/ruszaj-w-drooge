@@ -1,0 +1,29 @@
+.social {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: 2rem;
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.6rem;
+    width: 4.6rem;
+    border: 2px solid $footer-color;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      background-color: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+  &__item:hover &__icon {
+    color: $white-color;
+  }
+  &__icon {
+    font-size: 2.4rem;
+    color: $footer-color;
+    transition: 0.2s ease-in-out;
+  }
+}

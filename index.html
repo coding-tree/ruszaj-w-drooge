@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ruszaj w drooge</title>
+    <link rel="stylesheet" href="./public/slick.css" />
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
@@ -117,7 +118,8 @@
     </header>
 
     <main>
-      <div class="carousel">
+      <div class="carousel" id="carousel">
+        <!-- 1 -->
         <div class="carousel__item">
           <img class="carousel__photo" src="./public/photos/178.jpg" alt="" />
           <div class="carousel__shadow"></div>
@@ -136,10 +138,25 @@
           </div>
         </div>
 
-        <div class="carousel__indicators indicators">
-          <li class="indicators__item indicators__item--active"></li>
-          <li class="indicators__item"></li>
-          <li class="indicators__item"></li>
+        <!-- 2 -->
+        <div class="carousel__item carousel__item--2">
+          <img class="carousel__photo" src="./public/photos/1519.jpg" alt="" />
+          <div class="carousel__shadow"></div>
+          <div class="carousel__filter"></div>
+          <div class="container carousel__container ">
+            <div class="carousel__caption">
+              <h1 class="heading-1 carousel__title">
+                Dobry zwyczaj - wypożyczaj!
+              </h1>
+              <h6 class="heading-6 carousel__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                ea fugiat in! Officia natus expedita, impedit
+              </h6>
+              <a href="#" class="btn btn__primary btn--small carousel__btn"
+                >Zobacz ofertę</a
+              >
+            </div>
+          </div>
         </div>
       </div>
 
@@ -169,28 +186,33 @@
               <h1 class="heading-1 heading-1--dark">
                 Dlaczego warto wypożyczać ?
               </h1>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                sed diam voluptua. At vero eos et accusam et justo duo dolores
-                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-                est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                invidunt ut labore et dolore magna aliquyam erat, sed diam
-                voluptua. At vero eos et accusam et justo duo dolores et ea
-                rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                invidunt ut labore et dolore magna aliquyam erat, sed diam
-                voluptua. At vero eos et accusam et justo duo dolores et ea
-                rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-                Lorem ipsum dolor sit amet.
-              </p>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                  sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                  ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                  nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua.
+                </p>
+                <p>
+                  At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                  clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                  dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                  sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                  labore et dolore magna aliquyam erat, sed diam voluptua. At
+                  vero eos et accusam et justo duo dolores et ea rebum. Stet
+                  clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                  dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                  sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                  labore et dolore magna aliquyam erat, sed diam voluptua. At
+                  vero eos et accusam et justo duo dolores et ea rebum. Stet
+                  clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                  dolor sit amet.
+                </p>
+              </div>
             </div>
             <div class="rent__image-container">
               <img class="rent__photo" src="./public/why.png" alt="" />
@@ -199,5 +221,63 @@
         </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__company">
+          <h4 class="heading-4 footer__title">Firma</h4>
+
+          <div class="footer__content">
+            <h6 class="heading-6 footer__company-name">Ruszaj w drooge</h6>
+            <p class="footer__description">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet
+            </p>
+          </div>
+        </div>
+        <div class="footer__contact">
+          <h4 class="heading-4 footer__title">Kontakt</h4>
+          <div class="footer__content">
+            <p>Ruszaj w drooge</p>
+            <p>NIP: 777-777-43-33</p>
+            <p>ul. Testowa 23</p>
+            <p>99-000 Poznań</p>
+          </div>
+        </div>
+        <div class="footer__privacy">
+          <h4 class="heading-4 footer__title">Polityka prywatności</h4>
+          <div class="footer__content">
+            <div class="social">
+              <div class="social__item">
+                <i class="fab fa-facebook-f social__icon"></i>
+              </div>
+              <div class="social__item">
+                <i class="fab fa-twitter social__icon"></i>
+              </div>
+              <div class="social__item">
+                <i class="fab fa-instagram social__icon"></i>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="footer__link"
+            >Regulacje prawne i polityka prywatności</a
+          >
+        </div>
+        <div class="footer__copyright">
+          <p class="footer__copyright-text">
+            Copyright &copy; <span id="date"></span> | Coding Tree
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-2.2.0.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="./js/slick.min.js" defer></script>
+    <script src="./js/main.js" defer></script>
   </body>
 </html>

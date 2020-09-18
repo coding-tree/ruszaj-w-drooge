@@ -125,6 +125,56 @@ body {
 .header__menu {
   background-color: #f3f3f3; }
 
+.footer {
+  background-color: #f3f3f3;
+  padding: 9.5rem 0; }
+  .footer__container {
+    display: grid;
+    grid-template-areas: "company contact privacy" "copyright copyright copyright";
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem; }
+  .footer__company {
+    display: grid;
+    grid-area: company; }
+  .footer__company-name {
+    padding-bottom: 3rem; }
+  .footer__contact {
+    display: grid;
+    grid-area: contact;
+    grid-template-rows: min-content 1fr; }
+    .footer__contact p {
+      line-height: 1; }
+  .footer__contact .footer__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .footer__privacy {
+    grid-area: privacy;
+    display: flex;
+    flex-direction: column; }
+  .footer__copyright {
+    grid-area: copyright;
+    text-align: center;
+    padding-top: 3rem;
+    border-top: 3px solid #e16241; }
+  .footer__title {
+    border-bottom: 3px solid #e16241;
+    padding-bottom: 1rem; }
+  .footer__content {
+    padding-top: 3rem; }
+  .footer__description {
+    font-size: 1.4rem; }
+  .footer__copyright-text {
+    font-size: 1.2rem; }
+  .footer__link {
+    margin-top: auto;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #9f9f9f;
+    transition: 0.2s ease-in-out; }
+    .footer__link:hover {
+      color: #e16241; }
+
 .btn {
   padding: 1.5rem 3rem;
   font-size: 2rem;
@@ -150,6 +200,8 @@ body {
   .carousel__item {
     position: relative;
     width: 100%; }
+    .carousel__item:focus {
+      outline: none; }
   .carousel__photo {
     position: absolute;
     top: 0;
@@ -179,7 +231,7 @@ body {
     align-content: center;
     grid-auto-rows: min-content;
     row-gap: 3rem;
-    width: 50%; }
+    width: 60%; }
   .carousel__title {
     font-weight: 900;
     font-size: 4.7rem; }
@@ -193,13 +245,15 @@ body {
     bottom: 5%;
     left: 50%;
     transform: translateX(-50%); }
+  .carousel .slick-track {
+    height: 100%; }
 
 .indicators {
   display: grid;
   column-gap: 2rem;
   grid-auto-flow: column;
   list-style: none; }
-  .indicators__item {
+  .indicators li {
     height: 1.8rem;
     width: 1.8rem;
     background-color: transparent;
@@ -207,7 +261,9 @@ body {
     border-radius: 100%;
     cursor: pointer;
     transition: 0.2s ease-in-out; }
-    .indicators__item:hover, .indicators__item--active {
+    .indicators li > button {
+      display: none; }
+    .indicators li:hover, .indicators li.slick-active {
       background-color: #fff; }
 
 .info {
@@ -250,7 +306,7 @@ body {
       background-color: #e16241; }
 
 .rent {
-  margin: 8rem 0; }
+  margin-top: 8rem; }
   .rent__info {
     text-align: center;
     margin-bottom: 8rem; }
@@ -284,19 +340,45 @@ body {
       right: 13%; }
   .rent__advantages {
     display: grid;
-    grid-template-columns: 1fr 0.7fr;
+    grid-template-columns: 1fr 0.8fr;
     grid-template-rows: minmax(0, 1fr);
     column-gap: 3rem; }
   .rent__content {
     display: grid;
     grid-auto-rows: min-content;
-    row-gap: 5rem; }
+    row-gap: 5rem;
+    margin-bottom: 9rem; }
   .rent__image-container {
     display: flex; }
   .rent__photo {
     width: 100%;
-    height: 100%;
+    margin-top: auto;
     object-fit: contain; }
+
+.social {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: 2rem; }
+  .social__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.6rem;
+    width: 4.6rem;
+    border: 2px solid #9f9f9f;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.2s ease-in-out; }
+    .social__item:hover {
+      background-color: #e16241;
+      border-color: #e16241; }
+  .social__item:hover .social__icon {
+    color: #fff; }
+  .social__icon {
+    font-size: 2.4rem;
+    color: #9f9f9f;
+    transition: 0.2s ease-in-out; }
 
 .submenu {
   font-family: "Red Hat Display", sans-serif; }
