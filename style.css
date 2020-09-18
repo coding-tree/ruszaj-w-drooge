@@ -237,6 +237,31 @@ body {
     display: flex;
     justify-content: flex-end; }
 
+#regulations .regulations {
+  position: relative;
+  margin: 8rem 0; }
+  #regulations .regulations__heading {
+    font-weight: 900;
+    margin-bottom: 6rem; }
+  #regulations .regulations__background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 100%;
+    object-fit: contain;
+    background-image: url("../../public/mapka.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    transform: translate(-50%, -50%); }
+  #regulations .regulations__background-car {
+    width: 100%;
+    height: 16vw;
+    background-image: url("../../public/background-car.svg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+
 .breadcrump {
   margin-bottom: 3rem; }
   .breadcrump__list {
@@ -494,6 +519,18 @@ body {
       color: #2d2d2d; }
   .pagination__icon {
     font-size: 3rem; }
+
+.regulation:last-child {
+  margin-bottom: 8rem; }
+.regulation__title {
+  margin-top: 6rem;
+  margin-bottom: 2rem; }
+.regulation__subtitle {
+  margin-bottom: 6rem; }
+.regulation__title, .regulation__subtitle {
+  text-align: center; }
+.regulation__description {
+  margin-bottom: 2.5rem !important; }
 
 .rent {
   margin-top: 8rem; }
