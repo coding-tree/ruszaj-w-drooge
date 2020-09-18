@@ -239,7 +239,7 @@ body {
 
 #regulations .regulations {
   position: relative;
-  margin: 8rem 0; }
+  margin-top: 8rem; }
   #regulations .regulations__heading {
     font-weight: 900;
     margin-bottom: 6rem; }
@@ -260,7 +260,8 @@ body {
     height: 16vw;
     background-image: url("../../public/background-car.svg");
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    background-position: 0 4px; }
 
 .breadcrump {
   margin-bottom: 3rem; }
