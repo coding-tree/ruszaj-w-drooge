@@ -1,0 +1,33 @@
+.breadcrump {
+  margin-bottom: 3rem;
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+  &__item {
+    padding-right: 1rem;
+    &:not(:last-child)::after {
+      display: inline;
+      content: "/";
+      margin-left: 1rem;
+    }
+  }
+  &__link,
+  &__item::after {
+    font-size: 1.6rem;
+    font-family: $header-font;
+    font-weight: 900;
+    color: $footer-color;
+  }
+  &__link {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-family: $header-font;
+    font-weight: 900;
+    transition: color 0.2s ease-in-out;
+    &:hover,
+    &--active {
+      color: $primary-color;
+    }
+  }
+}

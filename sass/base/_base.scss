@@ -8,3 +8,8 @@ body {
   max-width: $grid-width;
   margin: 0 auto;
 }
+
+*::selection {
+  background-color: $primary-color;
+  color: $white-color;
+}

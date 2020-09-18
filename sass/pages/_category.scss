@@ -1,0 +1,35 @@
+#category {
+  .cards {
+    position: relative;
+    min-height: 1000px;
+    margin-bottom: 8rem;
+
+    &__background {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url("../../public/mapka.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 90%;
+      height: 100%;
+      z-index: -1;
+    }
+    &__container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 36rem));
+      gap: 3rem;
+      margin-bottom: 8rem;
+      justify-content: space-between;
+    }
+    &__description {
+      margin-bottom: 8rem;
+    }
+    &__pagination {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

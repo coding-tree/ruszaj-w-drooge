@@ -7,14 +7,19 @@
 @import "layout/header";
 @import "layout/footer";
 
+@import "pages/category";
 @import "pages/home";
 
+@import "components/breadcrump";
 @import "components/button";
+@import "components/card";
 @import "components/carousel";
 @import "components/cookies";
+@import "components/hero";
 @import "components/indicators";
 @import "components/info";
 @import "components/menu";
+@import "components/pagination";
 @import "components/rent";
 @import "components/social";
 @import "components/submenu";

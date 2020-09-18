@@ -1,0 +1,26 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: $white-color;
+  box-shadow: 0 0 6px rgba($black-color, 0.16);
+  text-align: center;
+  &__container {
+    padding: 2rem;
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+  }
+  &__title {
+    margin-bottom: 2rem;
+  }
+  &__title,
+  &__price {
+    font-weight: 900;
+  }
+
+  &__price {
+  }
+}
