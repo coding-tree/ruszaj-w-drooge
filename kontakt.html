@@ -56,17 +56,17 @@
             <nav class="submenu">
               <ul class="submenu__list">
                 <li class="submenu__item">
-                  <a href="/kontakt.html" class="submenu__link">Kontakt</a>
+                  <a
+                    href="/kontakt.html"
+                    class="submenu__link submenu__link--active"
+                    >Kontakt</a
+                  >
                 </li>
                 <li class="submenu__item">
                   <a href="/porady.html" class="submenu__link ">Porady</a>
                 </li>
                 <li class="submenu__item">
-                  <a
-                    href="/regulamin.html"
-                    class="submenu__link submenu__link--active"
-                    >Regulamin</a
-                  >
+                  <a href="/regulamin.html" class="submenu__link ">Regulamin</a>
                 </li>
               </ul>
             </nav>
@@ -120,5 +120,99 @@
         </div>
       </div>
     </header>
+
+    <main>
+      <section class="contact">
+        <div class="container">
+          <h1 class="heading-1 heading-1--dark contact__heading">Kontakt</h1>
+          <div class="contact__info">
+            <div class="contact__company">Ruszaj w drooge</div>
+            <div class="contact__text">ul. Głowackiego 29/33</div>
+            <a href="mailto:info@ruszajwdrooge.pl" class="contact__link">
+              <i class="fas fa-envelope contact__icon"></i>
+              info@ruszajwdrooge.pl
+            </a>
+            <div class="contact__text">55-100 Poznań</div>
+            <a href="tel:+48600200900" class="contact__link">
+              <i class="fas fa-phone-alt contact__icon"></i>
+              +48 567 876 543
+            </a>
+          </div>
+          <div class="contact__map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77898.70576382469!2d16.831626908104326!3d52.400612594703325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470444d2ece10ab7%3A0xa4ea31980334bfd1!2zUG96bmHFhA!5e0!3m2!1spl!2spl!4v1600676096810!5m2!1spl!2spl"
+              frameborder="0"
+              style="border:0;"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+              class="contact__map"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__company">
+          <h4 class="heading-4 footer__title">Firma</h4>
+
+          <div class="footer__content">
+            <h6 class="heading-6 footer__company-name">Ruszaj w drooge</h6>
+            <p class="footer__description">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet
+            </p>
+          </div>
+        </div>
+        <div class="footer__contact">
+          <h4 class="heading-4 footer__title">Kontakt</h4>
+          <div class="footer__content">
+            <p>Ruszaj w drooge</p>
+            <p>NIP: 777-777-43-33</p>
+            <p>ul. Testowa 23</p>
+            <p>99-000 Poznań</p>
+          </div>
+        </div>
+        <div class="footer__privacy">
+          <h4 class="heading-4 footer__title">Polityka prywatności</h4>
+          <div class="footer__content">
+            <div class="social">
+              <div class="social__item">
+                <i class="fab fa-facebook-f social__icon"></i>
+              </div>
+              <div class="social__item">
+                <i class="fab fa-twitter social__icon"></i>
+              </div>
+              <div class="social__item">
+                <i class="fab fa-instagram social__icon"></i>
+              </div>
+            </div>
+          </div>
+          <a href="/regulamin.html" class="footer__link"
+            >Regulacje prawne i polityka prywatności</a
+          >
+        </div>
+        <div class="footer__copyright">
+          <p class="footer__copyright-text">
+            Copyright &copy; <span id="date"></span> | Coding Tree
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <section class="cookies" id="cookies">
+      <p class="cookies__text">
+        Ta strona korzysta z plików cookies, przeglądanie znaczy że akceptujesz
+        naszą politykę prywatności i pliki cookies.
+        <a href="#" class="cookies__link">Czytaj więcej</a>
+      </p>
+      <button class="btn btn__primary btn--small cookies__btn">
+        Akceptuję
+      </button>
+    </section>
   </body>
 </html>
