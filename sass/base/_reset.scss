@@ -5,3 +5,25 @@
   margin: 0;
   box-sizing: inherit;
 }
+
+.container {
+  padding: 0;
+}
+
+a {
+  padding: 0;
+}
+a:hover {
+  text-decoration: none;
+  color: unset;
+}
+
+ul,
+dl,
+ol {
+  margin: 0;
+}
+
+label {
+  margin: 0;
+}

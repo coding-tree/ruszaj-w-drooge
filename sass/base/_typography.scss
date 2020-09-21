@@ -18,11 +18,15 @@ body {
 .dark {
   color: $font-color;
 }
+.blue {
+  color: $tertiary-color;
+}
 
 @for $i from 1 through 6 {
   h#{$i} {
     @extend .header-font;
     line-height: 1.7;
+    margin: 0;
   }
   .heading-#{$i} {
     @if ($i == 1) {
@@ -44,6 +48,9 @@ body {
     }
     &--dark {
       @extend .dark;
+    }
+    &--blue {
+      @extend .blue;
     }
   }
 }

@@ -1,0 +1,31 @@
+.tablist {
+  display: grid;
+
+  &__menu {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+  &__item {
+  }
+  &__link {
+    font-size: 2rem;
+    font-family: $header-font;
+    padding: 0;
+    background-color: transparent !important;
+    color: $footer-color;
+    transition: 0.2s ease-in-out;
+    &.active,
+    &:hover {
+      color: $primary-color !important;
+    }
+  }
+  &__text {
+    font-size: 1.6rem;
+    color: $footer-color;
+  }
+  &__content {
+  }
+}

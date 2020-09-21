@@ -1,0 +1,11 @@
+#product {
+  margin: 3rem 0 7rem 0;
+
+  .cards {
+    &__container {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(25rem, 40rem));
+      gap: 2.5rem;
+    }
+  }
+}
