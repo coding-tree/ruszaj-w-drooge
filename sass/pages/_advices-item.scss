@@ -1,0 +1,29 @@
+#advices-item {
+  margin: 8rem 0;
+  .advices-item {
+    &__heading {
+      margin-bottom: 3rem;
+      font-weight: 900;
+    }
+    &__gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 30rem;
+      gap: 3rem;
+      margin: 3rem 0;
+    }
+    &__photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &__related {
+      margin: 8rem 0 6rem 0;
+    }
+    &__container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+      gap: 3rem;
+    }
+  }
+}
