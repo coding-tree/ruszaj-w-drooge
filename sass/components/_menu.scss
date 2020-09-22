@@ -1,7 +1,8 @@
 .menu {
+  position: relative;
   display: flex;
   height: 4.6rem;
-
+  z-index: 999;
   &__list {
     flex: 1;
     display: flex;
@@ -11,7 +12,8 @@
   }
   &__item {
   }
-  &__link {
+  &__link,
+  &__submenu-link {
     display: flex;
     align-items: center;
     padding: 0 2rem;
@@ -21,11 +23,43 @@
     text-decoration: none;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     color: $font-color;
-
+  }
+  &__link {
+    position: relative;
     &:hover,
     &--active {
       color: $white-color;
       background-color: $primary-color;
     }
+  }
+  &__submenu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  &__submenu-item {
+  }
+  &__submenu-link {
+    height: 4.6rem;
+    display: flex;
+    align-items: center;
+    background-color: $secondary-color;
+    &:hover {
+      color: $white-color;
+      background-color: $primary-color;
+    }
+  }
+
+  &__link:hover ~ &__submenu {
+    opacity: 1;
+    visibility: visible;
   }
 }
