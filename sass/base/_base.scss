@@ -7,6 +7,10 @@ body {
 .container {
   max-width: $grid-width;
   margin: 0 auto;
+
+  @media (max-width: $bp-large-tablet) {
+    padding: 0 5%;
+  }
 }
 
 *::selection {

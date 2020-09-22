@@ -1,6 +1,18 @@
 .header {
+  @media (max-width: $bp-large-tablet) {
+    display: flex;
+    align-items: center;
+  }
   &__banner {
     background-color: $secondary-color;
+    @media (max-width: $bp-large-tablet) {
+      display: none;
+    }
+  }
+  &__body {
+    @media (max-width: $bp-large-tablet) {
+      width: 100%;
+    }
   }
   &__banner-container {
     display: flex;
@@ -59,6 +71,11 @@
     background-size: cover;
     background-position: 0 -20px;
     z-index: -1;
+
+    @media (max-width: $bp-large-tablet) {
+      width: 100%;
+      background-position: 0 0;
+    }
   }
 
   &__clients {
@@ -68,9 +85,23 @@
       font-family: $main-font;
       font-weight: 900;
     }
+
+    @media (max-width: $bp-large-tablet) {
+      display: none;
+    }
   }
 
   &__menu {
     background-color: $secondary-color;
+
+    @media (max-width: $bp-large-tablet) {
+      display: none;
+    }
+  }
+  &__mobile-menu {
+    display: flex;
+    @media (min-width: $bp-large-tablet) {
+      display: none;
+    }
   }
 }

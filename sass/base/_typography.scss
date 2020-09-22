@@ -2,6 +2,9 @@
 
 html {
   font-size: 62.5%;
+  @media (max-width: $bp-large-tablet) {
+    font-size: 55%;
+  }
 }
 
 body {
