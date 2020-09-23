@@ -1,9 +1,15 @@
 #advices-item {
   margin: 8rem 0;
+  @media (max-width: $bp-large-tablet) {
+    margin: 5.5rem 0;
+  }
   .advices-item {
     &__heading {
       margin-bottom: 3rem;
       font-weight: 900;
+      @media (max-width: $bp-large-tablet) {
+        font-size: 3.6rem;
+      }
     }
     &__gallery {
       display: grid;
@@ -19,11 +25,26 @@
     }
     &__related {
       margin: 8rem 0 6rem 0;
+      @media (max-width: $bp-large-tablet) {
+        font-size: 3.6rem;
+      }
     }
     &__container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
       gap: 3rem;
+    }
+  }
+  .card {
+    &__container {
+      padding: 0;
+    }
+    &__title,
+    &__description {
+      padding: 0 3rem;
+      @media (max-width: $bp-large-tablet) {
+        padding: 0 2.2rem;
+      }
     }
   }
 }

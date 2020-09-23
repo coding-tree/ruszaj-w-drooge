@@ -345,6 +345,9 @@ body {
 
 #advices .advices {
   margin: 8rem 0; }
+  @media (max-width: 75em) {
+    #advices .advices {
+      margin: 5.5rem 0; } }
   #advices .advices__pagination {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -355,6 +358,9 @@ body {
     margin-top: 8rem; }
   #advices .advices__heading {
     font-weight: 900; }
+    @media (max-width: 75em) {
+      #advices .advices__heading {
+        font-size: 3.6rem; } }
 #advices .cards {
   margin-top: 6rem; }
   #advices .cards__container {
@@ -370,16 +376,34 @@ body {
   #advices .card__btn {
     text-align: center;
     margin-top: 3rem; }
+    @media (max-width: 75em) {
+      #advices .card__btn {
+        font-size: 1.8rem; } }
   #advices .card__title, #advices .card__description {
     padding: 0 3rem; }
+    @media (max-width: 75em) {
+      #advices .card__title, #advices .card__description {
+        padding: 0 2.2rem; } }
+  @media (max-width: 75em) {
+    #advices .card__description {
+      font-size: 1.6rem; } }
   #advices .card__title {
     font-size: 2.4rem; }
+    @media (max-width: 75em) {
+      #advices .card__title {
+        font-size: 1.8rem; } }
 
 #advices-item {
   margin: 8rem 0; }
+  @media (max-width: 75em) {
+    #advices-item {
+      margin: 5.5rem 0; } }
   #advices-item .advices-item__heading {
     margin-bottom: 3rem;
     font-weight: 900; }
+    @media (max-width: 75em) {
+      #advices-item .advices-item__heading {
+        font-size: 3.6rem; } }
   #advices-item .advices-item__gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -393,10 +417,20 @@ body {
        object-fit: cover; }
   #advices-item .advices-item__related {
     margin: 8rem 0 6rem 0; }
+    @media (max-width: 75em) {
+      #advices-item .advices-item__related {
+        font-size: 3.6rem; } }
   #advices-item .advices-item__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     gap: 3rem; }
+  #advices-item .card__container {
+    padding: 0; }
+  #advices-item .card__title, #advices-item .card__description {
+    padding: 0 3rem; }
+    @media (max-width: 75em) {
+      #advices-item .card__title, #advices-item .card__description {
+        padding: 0 2.2rem; } }
 
 #category .cards {
   position: relative;
@@ -764,6 +798,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (max-width: 75em) {
+    .hero {
+      margin: 0;
+      height: 26rem; } }
   .hero__background {
     background-color: rgba(0, 0, 0, 0.3);
     width: 100%;

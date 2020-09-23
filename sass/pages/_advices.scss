@@ -2,6 +2,10 @@
   .advices {
     margin: 8rem 0;
 
+    @media (max-width: $bp-large-tablet) {
+      margin: 5.5rem 0;
+    }
+
     &__pagination {
       display: flex;
       justify-content: flex-end;
@@ -9,6 +13,9 @@
     }
     &__heading {
       font-weight: 900;
+      @media (max-width: $bp-large-tablet) {
+        font-size: 3.6rem;
+      }
     }
   }
   .cards {
@@ -31,13 +38,27 @@
     &__btn {
       text-align: center;
       margin-top: 3rem;
+      @media (max-width: $bp-large-tablet) {
+        font-size: 1.8rem;
+      }
     }
     &__title,
     &__description {
       padding: 0 3rem;
+      @media (max-width: $bp-large-tablet) {
+        padding: 0 2.2rem;
+      }
+    }
+    &__description {
+      @media (max-width: $bp-large-tablet) {
+        font-size: 1.6rem;
+      }
     }
     &__title {
       font-size: 2.4rem;
+      @media (max-width: $bp-large-tablet) {
+        font-size: 1.8rem;
+      }
     }
   }
 }

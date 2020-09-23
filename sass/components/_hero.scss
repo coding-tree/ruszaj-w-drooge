@@ -6,6 +6,11 @@
   justify-content: center;
   align-items: center;
 
+  @media (max-width: $bp-large-tablet) {
+    margin: 0;
+    height: 26rem;
+  }
+
   &__background {
     background-color: rgba($black-color, 0.3);
     width: 100%;
