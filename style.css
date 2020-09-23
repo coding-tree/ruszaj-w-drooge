@@ -1348,7 +1348,6 @@ body {
           left: 26%; } }
       @media (max-width: 48em) {
         .rent__step--2 {
-          top: 20%;
           left: 21%; } }
     .rent__step--3 {
       top: 63%;
@@ -1367,7 +1366,6 @@ body {
           right: 12%; } }
       @media (max-width: 48em) {
         .rent__step--4 {
-          top: 20%;
           right: 10%; } }
   .rent__advantages {
     display: grid;
