@@ -5,25 +5,41 @@
     @media (max-width: $bp-large-tablet) {
       margin: 5.5rem 0;
     }
+    @media (max-width: $bp-large-mobile) {
+      margin: 3.5rem 0;
+    }
 
     &__pagination {
       display: flex;
       justify-content: flex-end;
       margin-top: 8rem;
+
+      @media (max-width: $bp-large-mobile) {
+        margin-top: 3.5rem;
+      }
     }
     &__heading {
       font-weight: 900;
       @media (max-width: $bp-large-tablet) {
         font-size: 3.6rem;
       }
+      @media (max-width: $bp-large-mobile) {
+        font-size: 2.3rem;
+      }
     }
   }
   .cards {
     margin-top: 6rem;
+    @media (max-width: $bp-large-mobile) {
+      margin-top: 3.5rem;
+    }
     &__container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
       gap: 2.5rem;
+      @media (max-width: $bp-large-mobile) {
+        grid-template-columns: 1fr;
+      }
     }
   }
   .card {

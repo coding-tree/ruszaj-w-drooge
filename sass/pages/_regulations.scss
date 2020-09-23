@@ -6,9 +6,16 @@
     @media (max-width: $bp-large-tablet) {
       margin-top: 5.5rem;
     }
+    @media (max-width: $bp-large-mobile) {
+      margin-top: 3.5rem;
+    }
     &__heading {
       font-weight: 900;
       margin-bottom: 6rem;
+      @media (max-width: $bp-large-mobile) {
+        margin-bottom: 3.5rem;
+        font-size: 2.3rem;
+      }
     }
 
     &__background {
@@ -23,6 +30,9 @@
       background-position: center;
       z-index: -1;
       transform: translate(-50%, -50%);
+      @media (max-width: $bp-large-mobile) {
+        display: none;
+      }
     }
     &__background-car {
       width: 100%;
@@ -34,6 +44,9 @@
       @media (max-width: $bp-large-tablet) {
         height: 23vw;
         background-position: 50% 4px;
+      }
+      @media (max-width: $bp-large-mobile) {
+        height: 35vw;
       }
     }
   }

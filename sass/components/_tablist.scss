@@ -21,6 +21,9 @@
     &:hover {
       color: $primary-color !important;
     }
+    @media (max-width: $bp-large-mobile) {
+      font-size: 1.8rem;
+    }
   }
   &__text {
     font-size: 1.6rem;

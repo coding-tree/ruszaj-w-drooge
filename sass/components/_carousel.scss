@@ -86,6 +86,9 @@
   }
   &__btn {
     justify-self: flex-start;
+    @media (max-width: $bp-large-mobile) {
+      font-size: 1.4rem;
+    }
   }
 
   &__indicators {

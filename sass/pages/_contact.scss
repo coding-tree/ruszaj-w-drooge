@@ -3,12 +3,19 @@
   @media (max-width: $bp-large-tablet) {
     margin: 5.5rem 0;
   }
+  @media (max-width: $bp-large-mobile) {
+    margin: 3.5rem 0;
+  }
   &__heading {
     font-weight: 900;
     margin-bottom: 6rem;
     @media (max-width: $bp-large-tablet) {
       margin-bottom: 5.5rem;
       font-size: 3.6rem;
+    }
+    @media (max-width: $bp-large-mobile) {
+      font-size: 2.3rem;
+      margin-bottom: 3.5rem;
     }
   }
 
@@ -20,6 +27,10 @@
     margin-bottom: 3rem;
     @media (max-width: $bp-large-tablet) {
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: $bp-large-mobile) {
+      grid-template-columns: 1fr;
     }
   }
 
@@ -59,6 +70,9 @@
     transition: 0.2s ease-in-out;
     &:hover {
       color: $primary-color;
+    }
+    @media (max-width: $bp-large-mobile) {
+      order: 1;
     }
   }
   &__icon {

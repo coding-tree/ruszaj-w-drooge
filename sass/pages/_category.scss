@@ -29,6 +29,10 @@
       @media (max-width: $bp-large-tablet) {
         grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
       }
+
+      @media (max-width: $bp-large-mobile) {
+        grid-template-columns: 1fr;
+      }
     }
     &__description {
       margin-bottom: 8rem;

@@ -31,9 +31,19 @@
     // For current image only
     object-position: 0 -10vw;
     z-index: -2;
+    @media (max-width: $bp-large-mobile) {
+      object-position: initial;
+    }
   }
   &__title {
     color: $white-color;
     font-size: 4.7rem;
+
+    @media (max-width: $bp-large-tablet) {
+      font-size: 3.8rem;
+    }
+    @media (max-width: $bp-large-mobile) {
+      font-size: 2.3rem;
+    }
   }
 }
