@@ -435,9 +435,16 @@ body {
 
 .contact {
   margin: 8rem 0; }
+  @media (max-width: 75em) {
+    .contact {
+      margin: 5.5rem 0; } }
   .contact__heading {
     font-weight: 900;
     margin-bottom: 6rem; }
+    @media (max-width: 75em) {
+      .contact__heading {
+        margin-bottom: 5.5rem;
+        font-size: 3.6rem; } }
   .contact__info {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
@@ -445,8 +452,14 @@ body {
     grid-auto-rows: -webkit-max-content;
     grid-auto-rows: max-content;
     margin-bottom: 3rem; }
+    @media (max-width: 75em) {
+      .contact__info {
+        grid-template-columns: repeat(2, 1fr); } }
   .contact__company, .contact__text, .contact__link {
     font-size: 1.6rem; }
+    @media (max-width: 75em) {
+      .contact__company, .contact__text, .contact__link {
+        font-size: 1.8rem; } }
   .contact__company, .contact__link {
     font-weight: 900; }
   .contact__company {

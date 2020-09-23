@@ -1,8 +1,15 @@
 .contact {
   margin: 8rem 0;
+  @media (max-width: $bp-large-tablet) {
+    margin: 5.5rem 0;
+  }
   &__heading {
     font-weight: 900;
     margin-bottom: 6rem;
+    @media (max-width: $bp-large-tablet) {
+      margin-bottom: 5.5rem;
+      font-size: 3.6rem;
+    }
   }
 
   &__info {
@@ -11,12 +18,18 @@
     gap: 1rem;
     grid-auto-rows: max-content;
     margin-bottom: 3rem;
+    @media (max-width: $bp-large-tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__company,
   &__text,
   &__link {
     font-size: 1.6rem;
+    @media (max-width: $bp-large-tablet) {
+      font-size: 1.8rem;
+    }
   }
 
   &__company,
