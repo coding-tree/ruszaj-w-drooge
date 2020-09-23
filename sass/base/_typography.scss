@@ -65,4 +65,8 @@ p {
   &:not(:last-child) {
     margin-bottom: 1.2rem;
   }
+
+  @media (max-width: $bp-large-tablet) {
+    font-size: 1.8rem;
+  }
 }

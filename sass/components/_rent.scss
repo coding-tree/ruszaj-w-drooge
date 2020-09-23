@@ -1,5 +1,8 @@
 .rent {
   margin-top: 8rem;
+  @media (max-width: $bp-large-tablet) {
+    margin-top: 5.7rem;
+  }
 
   &__info {
     text-align: center;
@@ -8,6 +11,9 @@
 
   &__title {
     margin-bottom: 6rem;
+    @media (max-width: $bp-large-tablet) {
+      margin-bottom: 0;
+    }
   }
 
   &__steps {
@@ -16,6 +22,10 @@
   &__map {
     width: 100%;
     height: 588px;
+
+    @media (max-width: $bp-large-tablet) {
+      height: 50vw;
+    }
   }
 
   &__step,
@@ -27,26 +37,45 @@
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
+    @media (max-width: $bp-large-tablet) {
+      bottom: 0%;
+    }
   }
 
   &__step {
     font-size: 2rem;
     font-family: $header-font;
+    @media (max-width: $bp-large-tablet) {
+      font-size: 2vw;
+    }
     &--1 {
       top: 63%;
       left: 11%;
+      @media (max-width: $bp-large-tablet) {
+        top: 63%;
+        left: 8vw;
+      }
     }
     &--2 {
       top: 23%;
       left: 29%;
+      @media (max-width: $bp-large-tablet) {
+        left: 26%;
+      }
     }
     &--3 {
       top: 63%;
       right: 35.5%;
+      @media (max-width: $bp-large-tablet) {
+        right: 33%;
+      }
     }
     &--4 {
       top: 23%;
       right: 13%;
+      @media (max-width: $bp-large-tablet) {
+        right: 12%;
+      }
     }
   }
 
@@ -55,6 +84,9 @@
     grid-template-columns: 1fr 0.8fr;
     grid-template-rows: minmax(0, 1fr);
     column-gap: 3rem;
+    @media (max-width: $bp-large-tablet) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__content {
@@ -64,6 +96,12 @@
     margin-bottom: 9rem;
   }
 
+  &__heading {
+    @media (max-width: $bp-large-tablet) {
+      text-align: center;
+    }
+  }
+
   &__image-container {
     display: flex;
   }
@@ -71,5 +109,8 @@
     width: 100%;
     margin-top: auto;
     object-fit: contain;
+    @media (max-width: $bp-large-tablet) {
+      display: none;
+    }
   }
 }

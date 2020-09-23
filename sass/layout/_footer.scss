@@ -9,6 +9,15 @@
       "copyright copyright copyright";
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
+
+    @media (max-width: $bp-large-tablet) {
+      grid-template-areas:
+        "company contact"
+        "privacy privacy"
+        "cta cta"
+        "copyright copyright";
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__company {
@@ -17,6 +26,9 @@
   }
   &__company-name {
     padding-bottom: 3rem;
+    @media (max-width: $bp-large-tablet) {
+      font-size: 1.8rem;
+    }
   }
   &__contact {
     display: grid;
@@ -24,6 +36,9 @@
     grid-template-rows: min-content 1fr;
     p {
       line-height: 1;
+      @media (max-width: $bp-large-tablet) {
+        font-size: 1.6rem;
+      }
     }
   }
   &__contact &__content {
@@ -36,6 +51,33 @@
     display: flex;
     flex-direction: column;
   }
+  &__privacy &__content {
+    @media (max-width: $bp-large-tablet) {
+      grid-auto-flow: column;
+      justify-content: start;
+      align-items: center;
+      gap: 3rem;
+    }
+  }
+  &__privacy &__link {
+    margin-top: 0;
+  }
+  &__cta {
+    display: none;
+    @media (max-width: $bp-large-tablet) {
+      display: flex;
+      grid-area: cta;
+      border-top: 3px solid $primary-color;
+    }
+  }
+  &__cta &__content {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    width: 100%;
+    .info {
+      font-size: 1.6rem;
+    }
+  }
   &__copyright {
     grid-area: copyright;
     text-align: center;
@@ -45,15 +87,21 @@
   &__title {
     border-bottom: 3px solid $primary-color;
     padding-bottom: 1rem;
+    @media (max-width: $bp-large-tablet) {
+      font-size: 2.3rem;
+    }
   }
   &__content {
     padding-top: 3rem;
+    height: 100%;
+    display: grid;
+    align-content: space-between;
   }
   &__description {
     font-size: 1.4rem;
   }
   &__copyright-text {
-    font-size: 1.2rem;
+    font-size: 12px;
   }
   &__link {
     margin-top: auto;
@@ -63,6 +111,9 @@
     transition: 0.2s ease-in-out;
     &:hover {
       color: $primary-color;
+    }
+    @media (max-width: $bp-large-tablet) {
+      font-size: 1.8rem;
     }
   }
 }

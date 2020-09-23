@@ -6,11 +6,20 @@
   justify-content: space-between;
   align-items: center;
 
+  @media (max-width: $bp-large-tablet) {
+    height: auto;
+    align-items: stretch;
+  }
+
   &__text {
     color: $white-color;
     margin-bottom: 0 !important;
     font-size: 1.4rem;
     margin-left: 3rem;
+    @media (max-width: $bp-large-tablet) {
+      padding: 1rem 0;
+      font-size: 1.6rem;
+    }
   }
   &__link {
     color: $white-color;
@@ -28,6 +37,14 @@
     }
     &:focus {
       outline: none;
+    }
+    @media (max-width: $bp-large-tablet) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      margin-left: 3rem;
+      font-size: 1.6rem;
     }
   }
 }

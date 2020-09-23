@@ -4,6 +4,9 @@
   margin-top: 3rem;
   height: 60rem;
 
+  @media (max-width: $bp-large-tablet) {
+    margin: 0;
+  }
   &__item {
     position: relative;
     width: 100%;
@@ -52,10 +55,16 @@
     grid-auto-rows: min-content;
     row-gap: 3rem;
     width: 60%;
+    @media (max-width: $bp-large-tablet) {
+      width: 50%;
+    }
   }
   &__title {
     font-weight: 900;
     font-size: 4.7rem;
+    @media (max-width: $bp-large-tablet) {
+      font-size: 2.4rem;
+    }
   }
   &__description {
     font-weight: 500;
