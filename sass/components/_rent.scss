@@ -14,6 +14,9 @@
     @media (max-width: $bp-large-tablet) {
       margin-bottom: 0;
     }
+    @media (max-width: $bp-large-mobile) {
+      font-size: 2.2rem;
+    }
   }
 
   &__steps {
@@ -25,6 +28,9 @@
 
     @media (max-width: $bp-large-tablet) {
       height: 50vw;
+    }
+    @media (max-width: $bp-large-mobile) {
+      height: 70vw;
     }
   }
 
@@ -40,6 +46,10 @@
     @media (max-width: $bp-large-tablet) {
       bottom: 0%;
     }
+    @media (max-width: $bp-large-mobile) {
+      bottom: -3rem;
+      width: 70%;
+    }
   }
 
   &__step {
@@ -48,12 +58,17 @@
     @media (max-width: $bp-large-tablet) {
       font-size: 2vw;
     }
+    @media (max-width: $bp-large-mobile) {
+      font-size: 3vw;
+    }
     &--1 {
       top: 63%;
       left: 11%;
       @media (max-width: $bp-large-tablet) {
-        top: 63%;
         left: 8vw;
+      }
+      @media (max-width: $bp-large-mobile) {
+        left: 6%;
       }
     }
     &--2 {
@@ -62,6 +77,10 @@
       @media (max-width: $bp-large-tablet) {
         left: 26%;
       }
+      @media (max-width: $bp-large-mobile) {
+        top: 20%;
+        left: 21%;
+      }
     }
     &--3 {
       top: 63%;
@@ -69,12 +88,19 @@
       @media (max-width: $bp-large-tablet) {
         right: 33%;
       }
+      @media (max-width: $bp-large-mobile) {
+        right: 32%;
+      }
     }
     &--4 {
       top: 23%;
       right: 13%;
       @media (max-width: $bp-large-tablet) {
         right: 12%;
+      }
+      @media (max-width: $bp-large-mobile) {
+        top: 20%;
+        right: 10%;
       }
     }
   }
@@ -99,6 +125,10 @@
   &__heading {
     @media (max-width: $bp-large-tablet) {
       text-align: center;
+    }
+    @media (max-width: $bp-large-mobile) {
+      font-size: 2.2rem;
+      text-align: left;
     }
   }
 

@@ -11,6 +11,10 @@
     align-items: stretch;
   }
 
+  @media (max-width: $bp-large-mobile) {
+    flex-direction: column;
+  }
+
   &__text {
     color: $white-color;
     margin-bottom: 0 !important;
@@ -19,6 +23,11 @@
     @media (max-width: $bp-large-tablet) {
       padding: 1rem 0;
       font-size: 1.6rem;
+    }
+    @media (max-width: $bp-large-mobile) {
+      text-align: center;
+      margin: 0;
+      padding: 5% 2%;
     }
   }
   &__link {
@@ -45,6 +54,10 @@
       height: auto;
       margin-left: 3rem;
       font-size: 1.6rem;
+    }
+    @media (max-width: $bp-large-mobile) {
+      padding: 2rem;
+      margin: 0;
     }
   }
 }

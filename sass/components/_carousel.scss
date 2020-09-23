@@ -7,6 +7,10 @@
   @media (max-width: $bp-large-tablet) {
     margin: 0;
   }
+
+  @media (max-width: $bp-large-mobile) {
+    height: 35rem;
+  }
   &__item {
     position: relative;
     width: 100%;
@@ -58,6 +62,10 @@
     @media (max-width: $bp-large-tablet) {
       width: 50%;
     }
+    @media (max-width: $bp-large-mobile) {
+      width: 80%;
+      height: 90%;
+    }
   }
   &__title {
     font-weight: 900;
@@ -65,10 +73,16 @@
     @media (max-width: $bp-large-tablet) {
       font-size: 2.4rem;
     }
+    @media (max-width: $bp-large-mobile) {
+      font-size: 1.8rem;
+    }
   }
   &__description {
     font-weight: 500;
     font-family: inherit;
+    @media (max-width: $bp-large-mobile) {
+      font-size: 1.4rem;
+    }
   }
   &__btn {
     justify-self: flex-start;

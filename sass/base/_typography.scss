@@ -69,4 +69,7 @@ p {
   @media (max-width: $bp-large-tablet) {
     font-size: 1.8rem;
   }
+  @media (max-width: $bp-large-mobile) {
+    font-size: 1.6rem;
+  }
 }

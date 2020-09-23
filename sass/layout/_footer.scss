@@ -2,6 +2,14 @@
   background-color: $secondary-color;
   padding: 9.5rem 0;
 
+  @media (max-width: $bp-large-tablet) {
+    padding: 5.5rem 0;
+  }
+
+  @media (max-width: $bp-large-mobile) {
+    padding: 3.5rem 0;
+  }
+
   &__container {
     display: grid;
     grid-template-areas:
@@ -17,6 +25,16 @@
         "cta cta"
         "copyright copyright";
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: $bp-large-mobile) {
+      grid-template-areas:
+        "company"
+        "contact"
+        "privacy"
+        "cta"
+        "copyright";
+      grid-template-columns: 1fr;
     }
   }
 
@@ -58,6 +76,9 @@
       align-items: center;
       gap: 3rem;
     }
+    @media (max-width: $bp-large-mobile) {
+      grid-auto-flow: row;
+    }
   }
   &__privacy &__link {
     margin-top: 0;
@@ -76,6 +97,10 @@
     width: 100%;
     .info {
       font-size: 1.6rem;
+    }
+    @media (max-width: $bp-large-mobile) {
+      grid-auto-flow: row;
+      gap: 2rem;
     }
   }
   &__copyright {

@@ -8,6 +8,10 @@
   cursor: pointer;
   font-family: $main-font;
 
+  @media (max-width: $bp-large-mobile) {
+    font-size: 1.4rem;
+  }
+
   &__primary {
     border-color: $primary-color;
     color: $white-color;
