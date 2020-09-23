@@ -15,6 +15,9 @@
   }
   &__title {
     margin-bottom: 2rem;
+    @media (max-width: $bp-large-tablet) {
+      font-size: 1.8rem;
+    }
   }
   &__title,
   &__price {
@@ -23,6 +26,9 @@
 
   &__description {
     margin-bottom: 3rem;
+    @media (max-width: $bp-large-tablet) {
+      font-size: 1.6rem;
+    }
   }
 
   &__btn {

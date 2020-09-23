@@ -16,6 +16,9 @@
       width: 90%;
       height: 100%;
       z-index: -1;
+      @media (max-width: $bp-large-tablet) {
+        width: 100%;
+      }
     }
     &__container {
       display: grid;
@@ -23,6 +26,9 @@
       gap: 3rem;
       margin-bottom: 8rem;
       justify-content: space-between;
+      @media (max-width: $bp-large-tablet) {
+        grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+      }
     }
     &__description {
       margin-bottom: 8rem;

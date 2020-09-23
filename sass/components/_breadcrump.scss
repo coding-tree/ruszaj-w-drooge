@@ -1,5 +1,8 @@
 .breadcrump {
   margin-bottom: 3rem;
+  @media (max-width: $bp-large-tablet) {
+    margin: 2.2rem 0;
+  }
   &__list {
     display: flex;
     list-style: none;
