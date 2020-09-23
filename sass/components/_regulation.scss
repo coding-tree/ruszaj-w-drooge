@@ -1,13 +1,22 @@
 .regulation {
   &:last-child {
     margin-bottom: 8rem;
+    @media (max-width: $bp-large-tablet) {
+      margin-bottom: 5.5rem;
+    }
   }
   &__title {
     margin-top: 6rem;
     margin-bottom: 2rem;
+    @media (max-width: $bp-large-tablet) {
+      margin: 2.2rem;
+    }
   }
   &__subtitle {
     margin-bottom: 6rem;
+    @media (max-width: $bp-large-tablet) {
+      margin-bottom: 2.2rem;
+    }
   }
   &__title,
   &__subtitle {

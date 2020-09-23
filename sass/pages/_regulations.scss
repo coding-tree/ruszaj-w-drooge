@@ -2,6 +2,10 @@
   .regulations {
     position: relative;
     margin-top: 8rem;
+
+    @media (max-width: $bp-large-tablet) {
+      margin-top: 5.5rem;
+    }
     &__heading {
       font-weight: 900;
       margin-bottom: 6rem;
@@ -27,6 +31,10 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: 0 4px;
+      @media (max-width: $bp-large-tablet) {
+        height: 23vw;
+        background-position: 50% 4px;
+      }
     }
   }
 }

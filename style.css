@@ -532,6 +532,9 @@ body {
 #regulations .regulations {
   position: relative;
   margin-top: 8rem; }
+  @media (max-width: 75em) {
+    #regulations .regulations {
+      margin-top: 5.5rem; } }
   #regulations .regulations__heading {
     font-weight: 900;
     margin-bottom: 6rem; }
@@ -556,6 +559,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 4px; }
+    @media (max-width: 75em) {
+      #regulations .regulations__background-car {
+        height: 23vw;
+        background-position: 50% 4px; } }
 
 .breadcrump {
   margin-bottom: 3rem; }
@@ -1136,11 +1143,20 @@ body {
 
 .regulation:last-child {
   margin-bottom: 8rem; }
+  @media (max-width: 75em) {
+    .regulation:last-child {
+      margin-bottom: 5.5rem; } }
 .regulation__title {
   margin-top: 6rem;
   margin-bottom: 2rem; }
+  @media (max-width: 75em) {
+    .regulation__title {
+      margin: 2.2rem; } }
 .regulation__subtitle {
   margin-bottom: 6rem; }
+  @media (max-width: 75em) {
+    .regulation__subtitle {
+      margin-bottom: 2.2rem; } }
 .regulation__title, .regulation__subtitle {
   text-align: center; }
 .regulation__description {
