@@ -1,11 +1,24 @@
 #product {
   margin: 3rem 0 7rem 0;
 
+  @media (max-width: $bp-large-tablet) {
+    margin: 2.2rem 0 5.5rem 0;
+  }
   .cards {
     &__container {
       display: grid;
       grid-template-columns: repeat(3, minmax(25rem, 40rem));
       gap: 2.5rem;
+      @media (max-width: $bp-large-tablet) {
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      }
+      .card {
+        @media (max-width: $bp-large-tablet) {
+          &:nth-of-type(3n + 1) {
+            display: none;
+          }
+        }
+      }
     }
   }
 }

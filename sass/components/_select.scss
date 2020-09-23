@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba($footer-color, 0.2);
+    background-color: $secondary-color;
 
     cursor: pointer;
   }
@@ -36,7 +36,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba($footer-color, 0.2);
+    background-color: $secondary-color;
     transform-origin: top;
     transform: scaleY(0);
     transition: transform 0.1s ease-in-out;

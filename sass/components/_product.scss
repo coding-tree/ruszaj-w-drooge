@@ -8,6 +8,13 @@
   column-gap: 3rem;
   row-gap: 6rem;
 
+  @media (max-width: $bp-large-tablet) {
+    grid-template-areas:
+      "gallery details"
+      "calendar details"
+      "description description";
+  }
+
   &__gallery {
     grid-area: gallery;
   }
@@ -15,6 +22,10 @@
   &__title {
     font-weight: 900;
     grid-column: 1/-1;
+
+    @media (max-width: $bp-large-tablet) {
+      font-size: 2.2rem;
+    }
   }
 
   &__details {
@@ -23,10 +34,16 @@
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: min-content;
     gap: 2rem;
+    @media (max-width: $bp-large-tablet) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__text {
     grid-column: 1/-1;
+    @media (max-width: $bp-large-tablet) {
+      font-size: 1.6rem;
+    }
   }
 
   &__price {
@@ -49,6 +66,9 @@
     color: $footer-color;
     margin-top: 0.3rem;
     margin-right: 0.5rem;
+    @media (max-width: $bp-large-tablet) {
+      margin-top: 0;
+    }
   }
 
   &__access {
